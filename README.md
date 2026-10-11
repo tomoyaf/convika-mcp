@@ -18,13 +18,24 @@ This repository holds the public documentation and the server manifest for the *
 ### Claude (web and desktop)
 
 1. Settings → **Connectors** → **Add custom connector**
-2. Enter `https://mcp.convika.com`
+2. Enter `https://mcp.convika.com/mcp`
 3. Sign in to your Convika account, or create one for free
 
 ### Claude Code
 
+Install the Convika plugin. It adds this server and a `publish-page` skill, which turns an HTML file in your repo or a page Claude wrote into one document, shows you a private preview, and asks before it publishes.
+
+```
+/plugin marketplace add tomoyaf/convika-mcp
+/plugin install convika@convika
+```
+
+Then run `/mcp`, select the Convika server, and choose **Authenticate**. Details: [plugins/convika](plugins/convika/README.md)
+
+To add the server without the skill:
+
 ```bash
-claude mcp add --transport http convika https://mcp.convika.com
+claude mcp add --transport http convika https://mcp.convika.com/mcp
 ```
 
 ### Codex, Cursor, and other MCP clients

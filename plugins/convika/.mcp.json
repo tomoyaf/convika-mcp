@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"convika": {
+			"type": "http",
+			"url": "https://mcp.convika.com/mcp"
+		}
+	}
+}

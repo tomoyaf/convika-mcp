@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+	"name": "convika",
+	"description": "Convika's plugin for Claude Code. Publish a page to a live URL, and Convika stores signups from the page's form and counts visits.",
+	"owner": {
+		"name": "Convika",
+		"url": "https://convika.com"
+	},
+	"plugins": [
+		{
+			"name": "convika",
+			"source": "./plugins/convika",
+			"description": "Publish a page Claude wrote, or an HTML file in your repo, to a live URL. Convika stores signups from the page's form and counts visits, traffic sources, and button clicks.",
+			"category": "marketing",
+			"tags": ["landing-page", "hosting", "forms", "analytics"]
+		}
+	]
+}
